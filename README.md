@@ -1,4 +1,4 @@
-# Projeto I- Sistema Especialista para Diagnóstico de Problemas em Plantações
+# Projeto I - Sistema Especialista para Diagnóstico de Problemas em Plantações
 
 ## Descrição do Domínio
 
