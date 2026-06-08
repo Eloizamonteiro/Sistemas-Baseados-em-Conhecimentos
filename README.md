@@ -95,10 +95,10 @@ Dano severo (s/n): n
 PROCESSANDO...
 
 R1 → Suspeita de deficiência nutricional
-R2 → Deficiência de nitrogênio
+R2 → Deficiência de nitrogênio porque existe deficiência nutricional e crescimento lento.
+R5 → Monitorar recuperação da planta
 R4 → Plano de correção nutricional criado
 R3 → Aplicar adubação nitrogenada
-R5 → Monitorar recuperação da planta
 
 DIAGNÓSTICO FINAL:
 - Correção nutricional
@@ -107,6 +107,8 @@ DIAGNÓSTICO FINAL:
 RECOMENDAÇÕES:
 - Adubação nitrogenada
 ```
+
+As regras R1 e R2 foram acionadas porque a plantação apresentou folhas amarelas e crescimento lento. A partir dessas inferências, o sistema identificou uma deficiência nutricional associada à falta de nitrogênio. Em seguida, as regras R3, R4 e R5 geraram recomendações relacionadas à adubação nitrogenada e ao monitoramento da recuperação da plantação.
 
 ### Caso de Teste 2 - Estresse Hídrico
 
@@ -134,10 +136,10 @@ Dano severo (s/n): n
 PROCESSANDO...
 
 R6 → Falta de irrigação suspeita
-R7 → Estresse hídrico
+R7 → Estresse hídrico porque o solo está seco e as folhas estão murchas.
+R9 → Plano de irrigação criado
 R8 → Aumentar irrigação
 R10 → Monitorar umidade do solo
-R9 → Plano de irrigação criado
 
 DIAGNÓSTICO FINAL:
 - Estresse hídrico
@@ -145,6 +147,8 @@ DIAGNÓSTICO FINAL:
 RECOMENDAÇÕES:
 - Aumentar irrigação
 ```
+
+As regras R6 e R7 foram disparadas devido à combinação de solo seco e folhas murchas. O sistema inferiu a ocorrência de estresse hídrico e acionou as regras R8, R9 e R10, responsáveis pelas recomendações de aumento da irrigação e monitoramento da umidade do solo.
 
 ### Caso de Teste 3 - Doença Fúngica
 
@@ -171,11 +175,11 @@ Dano severo (s/n): n
 ```
 PROCESSANDO...
 
-R11 → Suspeita de fungos
-R12 → Risco elevado de fungos
+R11 → Suspeita de fungos porque foram detectadas manchas escuras.
+R12 → Risco elevado de fungos porque há manchas escuras e alta umidade.
 R15 → ALERTA: fungicida não aplicado
-R14 → Monitorar evolução da doença
 R13 → Aplicar fungicida
+R14 → Monitorar evolução da doença
 
 DIAGNÓSTICO FINAL:
 - Doença fúngica
@@ -183,6 +187,8 @@ DIAGNÓSTICO FINAL:
 RECOMENDAÇÕES:
 - Fungicida
 ```
+
+As regras R11 e R12 foram acionadas pela presença de manchas escuras e alta umidade. Como o sistema inferiu risco elevado de doença fúngica, a regra R15 gerou um alerta prioritário devido à ausência do fato fungicida_aplicado. Em seguida, as regras R13 e R14 recomendaram a aplicação de fungicida e o monitoramento da evolução da doença.
 
 ---
 
